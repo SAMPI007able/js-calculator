@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="operations"></div>
+            <div class="result"></div>
+        </div>
+        <div class="btn-container">
+            <table class="btn-container-table">
+                <tr>
+                    <td onclick="btnClicked('C', 'CLEAR')" colspan="3" class="btn">C</td>
+                    <td onclick="btnClicked('Del', 'DEL')" class="btn">DEL</td>
+                </tr>
+                <tr>
+                    <td onclick="btnClicked('7', 'OPR')" class="btn">7</td>
+                    <td onclick="btnClicked('8', 'OPR')" class="btn">8</td>
+                    <td onclick="btnClicked('9', 'OPR')" class="btn">9</td>
+                    <td onclick="btnClicked('/', 'OPND')" class="btn darker-bg">/</td>
+                </tr>
+                <tr>
+                    <td onclick="btnClicked('4', 'OPR')" class="btn">4</td>
+                    <td onclick="btnClicked('5', 'OPR')" class="btn">5</td>
+                    <td onclick="btnClicked('6', 'OPR')" class="btn">6</td>
+                    <td onclick="btnClicked('*', 'OPND')" class="btn darker-bg">*</td>
+                </tr>
+                <tr>
+                    <td onclick="btnClicked('1', 'OPR')" class="btn">1</td>
+                    <td onclick="btnClicked('2', 'OPR')" class="btn">2</td>
+                    <td onclick="btnClicked('3', 'OPR')" class="btn">3</td>
+                    <td onclick="btnClicked('-', 'OPND')" class="btn darker-bg">-</td>
+                </tr>
+                <tr>
+                    <td onclick="btnClicked('0', 'OPR')" class="btn">0</td>
+                    <td onclick="btnClicked('.', 'OPR')" class="btn">.</td>
+                    <td onclick="btnClicked('=', 'OPND')" class="btn">=</td>
+                    <td onclick="btnClicked('+', 'OPND')" class="btn darker-bg">+</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
